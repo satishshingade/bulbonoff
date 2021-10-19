@@ -1,0 +1,42 @@
+body{
+    background-color:#B1FFFD;
+}
+
+.A{
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 50%;
+    margin-top: 30%;
+}
+
+.B{
+    position: absolute;
+    margin-left: 56%;
+    margin-right: 50%;
+    margin-top: 30%;
+}
+
+.C{
+    
+    position: absolute;
+    margin-left: 42%;
+    margin-right: 50%;
+    margin-top: 30%;
+}
+
+.bulb{
+    position: absolute;
+    margin-left: 40%;
+    margin-right:60%;
+    margin-top:5%;
+}
+
+
+
+.btn{
+    font-family: cursive;
+    font-size: xx-large;
+    background-color:#FFE699;
+    border-radius: 25px;
+    padding: 0.5rem;
+}

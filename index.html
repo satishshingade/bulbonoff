@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="cssstyle.css">
+    </head>
+
+    <body>
+
+        <audio id="OnOff" src="onoff.wav"></audio>
+        <audio id="Blow" src="blow.mp3"></audio>
+    
+        <div class="bulb">
+            <img src="off.png" id="set">
+        </div>
+        <div class="A" onclick="fun(1)">
+            <button class="btn">ON</button>
+        </div>
+        <div class="B" onclick="fun(0)">
+            <button class="btn">OFF</button>
+        </div>
+
+        <div class="C" onclick="fun(2)">
+            <button class="btn">BREAK</button>
+        </div>
+
+
+        <script>
+            let good= true;
+            function fun(a){
+                if(good==false){
+                    alert("You broke the Bulb");
+                    return;
+                }
+
+                if(a==1){
+                    document.getElementById("set").src="on.png";
+                    document.getElementById("OnOff").play();
+                }
+                else if(a==2){
+                    document.getElementById("set").src="broken.png";
+                    document.getElementById("Blow").play();
+                    good=false;
+
+                }
+                else {
+                    document.getElementById("set").src="off.png";
+                    document.getElementById("OnOff").play();
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
